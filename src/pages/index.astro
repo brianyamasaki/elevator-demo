@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Elevator from '../components/Elevator.svelte';
+---
+
+<Layout title="The Elevator Simulator">
+	<main>
+		<h1>Elevator Simulator</h1>
+		<Elevator client:load />
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
